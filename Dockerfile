@@ -22,7 +22,7 @@ RUN source /ros_entrypoint.sh \
 	&& wstool update
 
 RUN apt-get update && apt-get install -y \
-	libeigen3-dev \
+	libeigen3-dev libflann-dev \
 	&& rm -rf /var/lib/apt/lists	
 	
 RUN source /ros_entrypoint.sh \
