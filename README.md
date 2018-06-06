@@ -1,5 +1,7 @@
 ## *SegMap*
 
+[![Travis CI Build Status](https://travis-ci.org/ICRA2017/segmap.svg?branch=reproducible)](https://travis-ci.org/ICRA2017/segmap)
+
 *SegMap* is a map representation based on 3D segments allowing for robot localization, environment reconstruction, and semantics extraction. The *SegMap* code is open-source (BSD License) and has been tested under Ubuntu 14.04 & 16.04 and ROS Indigo & Kinetic. 
 
 Please consult our [paper](https://arxiv.org/pdf/1609.07720v1.pdf), [video](https://www.youtube.com/watch?v=iddCgYbgpjE) and [wiki](https://github.com/ethz-asl/segmatch/wiki) for the algorithm description and for instructions on running demonstrations.
