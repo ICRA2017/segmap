@@ -22,7 +22,7 @@ RUN source /ros_entrypoint.sh \
 	&& wstool update
 
 RUN apt-get update && apt-get install -y \
-	libeigen3-dev libflann-dev \
+	libeigen3-dev libflann-dev libtool \
 	mesa-common-dev mesa-utils-extra libgl1-mesa-dev libglapi-mesa \
 	&& rm -rf /var/lib/apt/lists	
 	
