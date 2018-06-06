@@ -20,6 +20,10 @@ RUN source /ros_entrypoint.sh \
 	&& wstool init \
 	&& wstool merge segmap/dependencies.rosinstall \
 	&& wstool update
+
+RUN apt-get update && apt-get install -y \
+	libeigen3-dev \
+	&& rm -rf /var/lib/apt/lists	
 	
 RUN source /ros_entrypoint.sh \
 	&& cd $CATKIN_WS \
