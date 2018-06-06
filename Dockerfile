@@ -26,6 +26,10 @@ RUN apt-get update && apt-get install -y \
 	mesa-common-dev mesa-utils-extra libgl1-mesa-dev libglapi-mesa \
 	&& rm -rf /var/lib/apt/lists	
 	
+RUN apt-get update && apt-get install -y \
+	ros-indigo-tf \
+	&& rm -rf /var/lib/apt/lists
+	
 RUN source /ros_entrypoint.sh \
 	&& cd $CATKIN_WS \
 	&& catkin build -DCMAKE_BUILD_TYPE=Release segmapper
