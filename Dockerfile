@@ -1,4 +1,4 @@
-FROM ros:indigo
+FROM ros:indigo-perception
 
 RUN apt-get update && apt-get install -y \
 	python-catkin-pkg python-rosdep python-wstool \
@@ -27,7 +27,7 @@ RUN apt-get update && apt-get install -y \
 	&& rm -rf /var/lib/apt/lists	
 	
 RUN apt-get update && apt-get install -y \
-	ros-indigo-tf \
+	ros-indigo-geometry\
 	&& rm -rf /var/lib/apt/lists
 	
 RUN source /ros_entrypoint.sh \
